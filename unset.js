@@ -8,6 +8,7 @@ const rel_ = Gun.val.rel._;  // '#'
 const node_ = Gun.node._;  // '_'
 
 Gun.chain.unset = function(node){
-	this.put( { [node[node_].put[node_][rel_]]:null} );
+	if( this && node && node[node_] && node[node_].put && node[node_].put[node_] && node[node_].put[node_][rel_] )
+		this.put( { [node[node_].put[node_][rel_]]:null} );
 	return this;
 }

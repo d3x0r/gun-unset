@@ -1,6 +1,6 @@
 {
   "name": "gun-unset",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unset extension for Gun.",
   "main": "unset.js",
   "scripts": {
